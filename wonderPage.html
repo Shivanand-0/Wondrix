@@ -9,31 +9,40 @@
 </head>
 
 <body>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
     <div class="wonder-container">
         <h1 class="logo">Wondrix</h1>
         <p>Click any card to get an special item</p>
         <div class="card-container">
-            <a href="">
+            <a href="#wonder-result">
                 <div class="card" id="cat-fact">
                     <div class="img-part"></div>
                     <div class="heading-part">Random Cat Fact</div>
                 </div>
             </a>
-            <a href="">
+            <a href="#wonder-result">
                 <div class="card" id="dog-pic">
                     <div class="img-part"></div>
                     <div class="heading-part">Random Dog Image</div>
                 </div>
             </a>
-            <a href="">
+            <a href="#wonder-result">
                 <div class="card" id="color-hex">
                     <div class="img-part"></div>
-                    <div class="heading-part">Random Hex Code <br>with Color</div>
+                    <div class="heading-part">Random Color <br>with RGB Value</div>
                 </div>
             </a>
         </div>
 
     </div>
+    <div class="wonder-result" id="wonder-result">
+        <div class="card" id="result-box">
+            <div class="img-part " id="resultOutput">
+            </div>
+            <div class="heading-part" id="resultName"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
 </body>
 
 </html>
